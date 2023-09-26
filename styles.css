@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #fdf2f2;
+  font-family: Poppins, poppins;
+}
+
+header, footer {
+  background-image: url('https://media.istockphoto.com/id/1225066231/vector/abstract-germany-national-flag-flag-of-germany.jpg?s=612x612&w=0&k=20&c=_yMUhrr_t_CB90CjXu6UDgNMtn2hngw9iioYun9Yd6U='); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Sesuaikan ukuran gambar dengan latar belakang */
+  background-repeat: no-repeat; /* Hindari pengulangan gambar */
+  color: #fff;
+  padding: 30px;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+}
+
+section {
+  flex: 2;
+  padding: 20px;
+}
+
+aside {
+  flex: 2;
+  padding: 30px;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article, aside {
+    flex: 2;
+  }
+}
